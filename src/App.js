@@ -9,6 +9,8 @@ function App() {
         <h3>{people.length} Birthdays today</h3>
         <List people={people} />
         <button onClick={() => setPeople([])}>Reset</button>
+        {/* click a button to relod the birthdays */}
+        <button onClick={() => setPeople(data)}>Reload</button>
       </section>
     </main>
   );
